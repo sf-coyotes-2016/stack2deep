@@ -15,6 +15,9 @@ gem 'rake'
 gem 'bcrypt'
 gem 'shotgun'
 gem 'pry'
+gem 'pry-byebug'
+gem 'hirb'
+
 
 group :test do
   gem 'shoulda-matchers'
