@@ -2,6 +2,11 @@ class User < ActiveRecord::Base
   # users.password_hash in the database is a :string
   include BCrypt
 
+  has_many :questions
+  has_many :answers
+  has_many :votes
+  has_many :comments
+
   validates_presence_of :password
   validates_presence_of :email
   validates_uniqueness_of :email
